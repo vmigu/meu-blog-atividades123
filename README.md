@@ -36,3 +36,9 @@ def f(nums: list[int]) -> tuple[int, int]:
     return (-1, -1)
 
 Atividade 3
+def f(lista: list[tuple[int, str]], busca: int) -> str | None:
+    for numero, nome in lista:
+        if numero == busca:
+            return nome
+            
+    return None
